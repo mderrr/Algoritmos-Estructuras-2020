@@ -26,12 +26,10 @@ def test(number, cases):
     for case in cases:
 
         start = time.time()
-        print("str: " + str(start))
         case(number)
         end = time.time()
-        print("end: " + str(end))
-        print(end -start)
-        elapsed_times.append(end -start)
+
+        elapsed_times.append(end - start)
         
     print(elapsed_times)
 
