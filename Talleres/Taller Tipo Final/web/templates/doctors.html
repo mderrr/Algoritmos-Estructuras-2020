@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/doctors.css')}}">
+    <title>Doctors</title>
+</head>
+<body>
+    
+
+    <div id="captioned-gallery">
+        <figure class="slider">
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Michael-Wells.jpg')}}" alt>
+                <figcaption>Michael (Mike) L. Wells, M.D, Radiologist</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Mohamad-Adnan-Alkhouli.jpg')}}" alt>
+                <figcaption>Mohamad Adnan (Mohamad) Alkhouli, M.D, Interventional Cardiologist</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Martin-Abel.jpg')}}" alt>
+                <figcaption>Martin D. Abel, M.D, Anesthesiologist</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Afsaneh-Alavi.jpg')}}" alt>
+                <figcaption>Afsaneh Alavi, M.D, Dermatologist</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Andrea-Adams.jpg')}}" alt>
+                <figcaption>Andrea C. Adams, M.D, Neurologist</figcaption>
+            </figure>
+        </figure>
+    </div>
+
+    <div class="container blue topBotomBordersOut">
+        <a href="/services">SERVICES</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/home">HOME</a>
+    </div>
+</body>
+</html>

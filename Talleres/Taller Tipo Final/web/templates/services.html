@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/services.css')}}">
+    <title>Services</title>
+</head>
+<body>
+    <div id="captioned-gallery">
+        <figure class="slider">
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Radiology.jpg')}}" alt>
+                <figcaption>Radiology</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Cardiology.jpg')}}" alt>
+                <figcaption>Cardiology</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Anesthesiology.jpg')}}" alt>
+                <figcaption>Anesthesiology</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Dermatology.jpg')}}" alt>
+                <figcaption>Dermatology</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Neurology.jpg')}}" alt>
+                <figcaption>Neurology</figcaption>
+            </figure>
+        </figure>
+    </div>
+
+    <div class="container blue topBotomBordersOut">
+        <a href="/doctors">DOCTORS</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/home">HOME</a>
+    </div>
+</body>
+</html>
