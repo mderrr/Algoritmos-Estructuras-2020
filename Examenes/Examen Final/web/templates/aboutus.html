@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/aboutus.css')}}">
+    <title>AboutUs</title>
+</head>
+<body>
+    <div id="captioned-gallery">
+        <figure class="slider">
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Bedroom.jpg')}}" alt>
+                <figcaption>Nuestras habitaciones</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Cardiology.jpg')}}" alt>
+                <figcaption>Nuestra sala de Electrocardiografia</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Neurology.jpg')}}" alt>
+                <figcaption>Nuestra sala de Neurocirujia</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Radiology.jpg')}}" alt>
+                <figcaption>Nuestra sala de Radiologia</figcaption>
+            </figure>
+            <figure>
+                <img src="{{url_for('static', filename = 'images/Waiting.jpg')}}" alt>
+                <figcaption>Nuestras salas de espera</figcaption>
+            </figure>
+        </figure>
+    </div>
+      
+    <div class="container blue topBotomBordersOut">
+        <a href="/patients">PACIENTES</a>
+        <a href="/doctors">DOCTORES</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/fact">DATO CURIOSO</a>
+        <a href="/home">HOME</a>
+    </div>
+
+    <footer>
+        <span>shernanadezz(C) All rights Reserved</span>
+    </footer>
+</body>
+</html>
